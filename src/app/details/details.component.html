@@ -1,0 +1,32 @@
+<div class="row" *ngIf="detail">
+  <div class="col-md-1"></div>
+  <div class="col-md-2">
+    <img src="{{detail.picture}}" width="100%"/>
+  </div>
+  <div class="col-md-8">
+    <p>{{detail.firstname}} {{detail.lastname}}</p>
+    <p>Gender: {{detail.gender}}</p>
+    <p>Birthday Date: {{detail.birthday_date}}</p>
+  </div>
+  <div class="col-md-1"></div>
+</div>
+<div class="row" *ngIf="detail">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <table class="table">
+        <tr>
+          <th>Date</th>
+          <th>Coefficient</th>
+          <th>Value</th>
+          <th>Subject</th>
+        </tr>
+        <tr *ngFor="let mark of detail.marks">
+          <td>{{mark.date | date: 'medium'}}</td>
+          <td>{{mark.coefficient}}</td>
+          <td>{{mark.value}}</td>
+          <td>{{mark.subject}}</td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
