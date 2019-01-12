@@ -5,6 +5,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Description
 
+The first step is to install it from npm:
+
+`npm install -g @angular/cli`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
